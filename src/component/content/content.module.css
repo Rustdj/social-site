@@ -1,0 +1,14 @@
+
+.content {
+    grid-area: c;
+    background-color: brown;
+    color: #fff;  
+}
+
+.img {
+    width: 90%;
+}
+
+.descr {
+    padding-left: 20px;
+}
