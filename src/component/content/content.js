@@ -1,28 +1,13 @@
 import classes from './content.module.css';
+import MyPosts from './myPosts/myPosts';
 
 const Content = () => {
     return (
         <div className={classes.content}>
-            <div>
+            <div className={classes.content}>
                 <img className={classes.img} src='https://99px.ru/sstorage/56/2020/03/mid_333368_689628.jpg'/>
             </div>
-            <div className={classes.descr}>
-                ava + descr
-            </div>
-            <div className={classes.descr}>
-                My posts
-                <div>
-                    new post
-                </div>
-                <dic>
-                    <div>
-                        post 1
-                    </div>
-                    <div>
-                        post 2
-                    </div>
-                </dic>
-            </div>
+            <MyPosts/>
         </div>
     )
 }

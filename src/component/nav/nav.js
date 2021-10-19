@@ -5,11 +5,14 @@ const Nav = () => {
     return (
         <div className={classes.nav}>
             <ul>
-                <li><a href='#'>Profile</a></li>
-                <li><a href='#'>Message</a></li>
-                <li><a href='#'>News</a></li>
-                <li><a href='#'>Music</a></li>
+                <li><a href='/content'>Profile</a></li>
+                <li><a href='/dialogs'>Message</a></li>
+                <li><a href='/listnews'>News</a></li>
+                <li><a href='/music'>Music</a></li>
             </ul>
+                <ul>
+                    <li><a href='/setting'>Setting</a></li>
+                </ul>
         </div>
     )
 }
