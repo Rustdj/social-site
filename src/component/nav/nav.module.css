@@ -1,20 +1,32 @@
 
 
 .nav {
+    position: fixed;
     padding-top: 30px;
     grid-area: n;
     background-color: blanchedalmond;
+    height: 100%;
+    top: 161px;
+    width: 233px;
 }
+
 a {
     text-decoration: none;
     color: brown;
 }
-ul li {
+.item {
     list-style-type: none;
     margin-top: 30px;
     font-size: 20px;
     cursor: pointer;
 }
+
+.item .active {
+    color: rgb(77, 77, 189);
+    transition: 0.4s;
+    
+}
+
 
 ul li:hover {
     font-weight: 900;
