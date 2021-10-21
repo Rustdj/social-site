@@ -10,18 +10,22 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import './app.css';
 
 
-function App() {
+function App(props) {
+
+  
+
+
   return (
     <BrowserRouter>
           <div className="app-wrapper">
           <Header/>
           <Nav/>
           <div className='app-wrapper-content'>
-            <Route path='/dialogs' component={Dialogs}/>
-            <Route path='/content' component={Content}/>
-            <Route path='/listnews' component={ListNews}/>
-            <Route path='/music' component={Music}/>
-            <Route path='/setting' component={Setting}/>
+            <Route path='/dialogs' render={ () => <Dialogs dialogData={props.dialogData} messagesData={props.messagesData}/>}/>
+            <Route path='/content' render={ () => <Content postData={props.postData}/>}/>
+            <Route path='/listnews' render={ () => <ListNews/>}/>
+            <Route path='/music' render={ () => <Music/>}/>
+            <Route path='/setting' render={ () => <Setting/>}/>
           </div>
         </div>
     </BrowserRouter>
