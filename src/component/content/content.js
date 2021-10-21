@@ -7,7 +7,6 @@ const Content = (props) => {
         <div className={classes.content}>
             <ProfileInfo/>
             <MyPosts postData={props.postData}/>
-            
         </div>
     )
 }
