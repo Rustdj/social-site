@@ -8,13 +8,10 @@ import Setting from '../setting/setting';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import './app.css';
+import { addPost } from '../../redux/state';
 
 
 function App(props) {
-
-  
-
-
   return (
     <BrowserRouter>
           <div className="app-wrapper">
@@ -22,12 +19,10 @@ function App(props) {
           <Nav/>
           <div className='app-wrapper-content'>
             <Route path='/dialogs' 
-                        render={ () => <Dialogs 
-                        dialogData={props.appState.dialogData} 
-                        messagesData={props.appState.messagesData}/>}/>
+                        render={ () => <Dialogs state={props.appState.dialogPage} 
+                        state={props.appState.messagesPage}/>}/>
             <Route path='/content' 
-                        render={ () => <Content 
-                        postData={props.appState.postData}/>}/>
+                        render={ () => <Content state={props.appState.profilePage} addPost={props.addPost}/>}/>
                         
             <Route path='/listnews' render={ () => <ListNews/>}/>
             <Route path='/music' render={ () => <Music/>}/>

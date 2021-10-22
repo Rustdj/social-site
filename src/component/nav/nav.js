@@ -14,6 +14,27 @@ const Nav = () => {
                 <ul>
                     <li className={classes.item}><NavLink to='/setting' activeClassName={classes.active}>Setting</NavLink></li>
                 </ul>
+
+                <div className={classes.h}>
+                    <h1>Friends</h1>
+                </div>
+                <div className={classes.frendi}>
+                    <div className={classes.item}>
+                        <img src='https://bipbap.ru/wp-content/uploads/2017/08/0-70.jpg'/>
+                        <div className={classes.name}>Sergey</div>
+                    </div>
+                    <div className={classes.item}>
+                        <img src='https://bipbap.ru/wp-content/uploads/2017/08/0-70.jpg'/>
+                        <div className={classes.name}>Bogdan</div>
+                    </div>
+                    <div className={classes.item}>
+                        <img src='https://bipbap.ru/wp-content/uploads/2017/08/0-70.jpg'/>
+                        <div className={classes.name}>Alex</div>
+                    </div>
+                </div>
+
+            
+
         </div>
     )
 }

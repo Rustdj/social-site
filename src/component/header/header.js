@@ -4,7 +4,7 @@ import './header.module.css';
 const Header = () => {
     return (
         <div className={classes.header}>
-            <img src='https://www.rookee.ru/upload/logo.png' width='140px'/> 
+            <img src='https://www.rookee.ru/upload/logo.png' width='60px'/> 
         </div>
     )
 }

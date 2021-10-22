@@ -6,7 +6,7 @@
     grid-area: n;
     background-color: blanchedalmond;
     height: 100%;
-    top: 161px;
+    top: 88px;
     width: 233px;
 }
 
@@ -31,5 +31,25 @@ a {
 ul li:hover {
     font-weight: 900;
     transition: 0.6s all;
+}
+.frendi {
+    display: flex;
+    justify-content: space-around;
+}
+
+.h {
+    margin-top: 50px;
+    margin-left: 50px;
+    color: chocolate;
+}
+
+.frendi img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.name {
+    font-size: 14px;
 }
 
