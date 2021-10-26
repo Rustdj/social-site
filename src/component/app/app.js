@@ -8,7 +8,7 @@ import Setting from '../setting/setting';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import './app.css';
-import { addPost } from '../../redux/state';
+
 
 
 function App(props) {
@@ -22,7 +22,11 @@ function App(props) {
                         render={ () => <Dialogs state={props.appState.dialogPage} 
                         state={props.appState.messagesPage}/>}/>
             <Route path='/content' 
-                        render={ () => <Content state={props.appState.profilePage} addPost={props.addPost}/>}/>
+                        render={ () => <Content 
+                        profilePage={props.appState.profilePage} 
+                        dispatch={props.dispatch}
+                        updateNewPostText={props.updateNewPostText}
+                        />}/>
                         
             <Route path='/listnews' render={ () => <ListNews/>}/>
             <Route path='/music' render={ () => <Music/>}/>
@@ -32,5 +36,5 @@ function App(props) {
     </BrowserRouter>
   );
 }
-
 export default App;
+
