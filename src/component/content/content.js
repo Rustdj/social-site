@@ -1,16 +1,14 @@
-import { addPost } from '../../redux/state';
+
 import classes from './content.module.css';
-import MyPosts from './myPosts/myPosts';
 import ProfileInfo from './profileInfo/profileInfo';
+import MyPostContainer from './myPosts/myPostContainer';
 
 const Content = (props) => {
+    debugger;
     return (
         <div className={classes.content}>
             <ProfileInfo/>
-            <MyPosts postData={props.profilePage.postData}
-                     newPostText={props.profilePage.newPostText} 
-                     dispatch={props.dispatch}
-                     />
+            <MyPostContainer store={props.store} />
         </div>
     )
 }
