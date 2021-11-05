@@ -5,30 +5,33 @@ import sidebarReducer from "./sidebar-reducer";
 
 
 let store = {
-  _state: {
-    profilePage: {
-      postData: [
-        {id: 1, message: 'Hi, how are you?', likesCount: 12},
-        {id: 2, message: "It's my first post", likesCount: 23},
-      ],
+    _state: {
+      profilePage: {
+        postData: [
+              {id: 1, message: 'Hi, how are you?', likesCount: 12},
+              {id: 2, message: "It's my first post", likesCount: 23},
+              {id: 3, message: "How are you?", likesCount: 21},
+              {id: 4, message: "Hei", likesCount: 42}
+        ],
+      newPostText: 'Hello World'
     },
     messagesPage: {
       dialogData: [
-        {id: 1, name: 'Rustam'},
-        {id: 2, name: 'Dimych'},
-        {id: 3, name: 'Andrey'},
-        {id: 4, name: 'Sveta'},
-        {id: 5, name: 'Sasha'},
-        {id: 6, name: 'Victor'},
-        {id: 7, name: 'Valera'}
+          {id: 1, name: 'Rustam'},
+          {id: 2, name: 'Dimych'},
+          {id: 3, name: 'Andrey'},
+          {id: 4, name: 'Sveta'},
+          {id: 5, name: 'Sasha'},
+          {id: 6, name: 'Victor'},
+          //{id: 7, name: 'Valera'}
       ],
       messagesData: [
-        {id: 1, message: 'Hi'},
-        {id: 2, message: 'How is your it?'},
-        {id: 3, message: 'Yo'},
-        {id: 4, message: 'Yo'},
-        {id: 5, message: 'Yo'},
-        {id: 6, message: 'Yo'}
+          {id: 1, message: 'Hi'},
+          {id: 2, message: 'How is your it?'},
+          {id: 3, message: 'Yo'},
+          {id: 4, message: 'Yo'},
+          {id: 5, message: 'Yo'},
+          //{id: 6, message: 'Yo'}
       ],
       newMessageBody: ''
 
