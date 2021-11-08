@@ -3,11 +3,7 @@ const UNFOLLOW = 'UNFOLLOW';
 const SET_USERS = 'SET_USERS';
 
 let initialState = {
-    users: [
-      // {id: 1, followed: false, fullname: 'Rustam', status: 'I am a boss', location: {city: Saint-P}, country: {Russia} },
-      // {id: 2, followed: true, fullname: 'Andrey', status: 'I am a employe', location: {city: Kiev}, country: {Ukraine} },
-      // {id: 3, followed: false, fullname: 'Dimych', status: 'I am a employe', location: {city: Minsk}, country: {Belarus} }
-    ],
+    users: [  ]
     
 };
 
